@@ -1,0 +1,14 @@
+str=input("Please enter:")
+def count_case_characters(input_string):
+    lowercase_count = 0
+    uppercase_count = 0
+    for char in input_string:
+        if char.islower():
+            lowercase_count += 1
+        elif char.isupper():
+            uppercase_count += 1
+    return lowercase_count, uppercase_count
+input_string = input("Enter a string: ")
+lowercase, uppercase = count_case_characters(input_string)
+print("Lowercase characters:", lowercase)
+print("Uppercase characters:", uppercase)
